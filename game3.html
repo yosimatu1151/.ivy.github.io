@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ゲーム紹介サイト - お問い合わせ</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; }
+    header, footer { background: #333; color: white; padding: 1em; }
+    nav a { color: white; margin-right: 1em; text-decoration: none; }
+    main { padding: 2em; }
+    form { display: flex; flex-direction: column; width: 300px; }
+    input, textarea { margin-bottom: 1em; padding: 0.5em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ゲーム紹介サイト</h1>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="about.html">遊び方</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>お問い合わせ</h2>
+    <form>
+      <label>お名前：<input type="text" name="name"></label>
+      <label>メールアドレス：<input type="email" name="email"></label>
+      <label>メッセージ：<textarea name="message" rows="5"></textarea></label>
+      <button type="submit">送信</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 ゲーム紹介サイト
+  </footer>
+</body>
+</html>
