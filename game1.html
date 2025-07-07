@@ -4,10 +4,34 @@
   <meta charset="UTF-8">
   <title>ゲーム紹介サイト - ホーム</title>
   <style>
-    body { font-family: sans-serif; margin: 0; }
-    header, footer { background: #333; color: white; padding: 1em; }
-    nav a { color: white; margin-right: 1em; text-decoration: none; }
+    body { font-family: sans-serif; margin: 0; 
+       background-image: url('bg_abstract5_red_vertical.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  background-attachment: fixed;
+
+  /* ↓ 追加アニメーション */
+  animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+
+    header, footer {  color: rgb(0, 0, 0); padding: 1em; }
+    nav a { color: rgb(0, 0, 0); margin-right: 1em; text-decoration: none; }
     main { padding: 2em; }
+    
   </style>
 </head>
 <body>
@@ -15,19 +39,26 @@
     <h1>ゲーム紹介サイト</h1>
     <nav>
       <a href="index.html">ホーム</a>
-      <a href="about.html">遊び方</a>
-      <a href="contact.html">お問い合わせ</a>
+   
+
     </nav>
   </header>
 
   <main>
-    <h2>ゲームタイトル：ダンジョン・クエスト</h2>
-    <img src="game-image.jpg" alt="ゲーム画像" width="600">
-    <p>このゲームは、ダンジョンを探検しながらモンスターを倒すアクションRPGです。Javaで開発されており、PCで遊べます。</p>
+    <h2>ゲームタイトル:クロノトリガー</h2>
+    <img src="ダウンロード.jpg" alt="ゲーム画像" width="600">
+    <p></p>
+    <p>コメント<br>
+    1995年にSFC（スーパーファミコン）用で、20年以上昔に発売されたゲーム。<br>
+    ドット調のRPGで、過去、現代、未来をわたり、時空を越えて冒険するというストーリー。王道的な内容だが、。クリア後の要素は特にないが、マルチエンディング方式なのでがっつりストーリーを楽しみたい人におすすめ。<br>
+    戦闘は、FF（ファイナルファンタジー）のようなリアルタイム方式だが、FFよりは簡単に操作できたし、BGMが神がかり過ぎて臨場感すごかった。<br>
+    移植版で、DSやスマホやPCでもできるので気軽に始めやすいかも。<br>
+  </p>
   </main>
 
   <footer>
-    &copy; 2025 ゲーム紹介サイト
+         <div class="btn-wrapper">
+           <a href="https://www.jp.square-enix.com/chronotrigger/">公式サイトへ</a>
   </footer>
 </body>
 </html>

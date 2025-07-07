@@ -2,38 +2,59 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ゲーム紹介サイト - お問い合わせ</title>
+  <title>ゲーム紹介サイト - ホーム</title>
   <style>
-    body { font-family: sans-serif; margin: 0; }
-    header, footer { background: #333; color: white; padding: 1em; }
-    nav a { color: white; margin-right: 1em; text-decoration: none; }
+    body { font-family: sans-serif; margin: 0;
+     background-image: url('13622d0a-7c8a-4728-9d9b-a790f5738fa9.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  background-attachment: fixed;
+
+  /* ↓ 追加アニメーション */
+  animation: moveBackground 25s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 60% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+    header, footer {  color: rgb(0, 0, 0); padding: 1em; }
+    nav a { color: rgb(0, 0, 0); margin-right: 1em; text-decoration: none; }
     main { padding: 2em; }
-    form { display: flex; flex-direction: column; width: 300px; }
-    input, textarea { margin-bottom: 1em; padding: 0.5em; }
   </style>
 </head>
 <body>
   <header>
-    <h1>ゲーム紹介サイト</h1>
+    <h1>ゲーム紹介</h1>
     <nav>
       <a href="index.html">ホーム</a>
-      <a href="about.html">遊び方</a>
-      <a href="contact.html">お問い合わせ</a>
+   
+
     </nav>
   </header>
 
   <main>
-    <h2>お問い合わせ</h2>
-    <form>
-      <label>お名前：<input type="text" name="name"></label>
-      <label>メールアドレス：<input type="email" name="email"></label>
-      <label>メッセージ：<textarea name="message" rows="5"></textarea></label>
-      <button type="submit">送信</button>
-    </form>
+    <h2>ゲームタイトル:ゼルダの伝説 ティアーズ オブ ザ キングダム</h2>
+    <img src="20230209-236659-header.webp" alt="ゲーム画像" width="600">
+    <p>コメント<br>
+    『ゼルダの伝説』シリーズの最新作で、2023年にswitchで発売された。<br>
+    空や地上に地下の広大なマップ上を自由に探索したり、色んな謎を解いていくのが魅力。<br>
+    戦闘面は、相手の攻撃を避けれたり、タイミングよくガードすることで相手の攻撃をはじいたり等、戦っていてかなり楽しい。<br>
+    謎解きも程よく難しくて、自分の発想次第でクリアできるのですぐに時間が溶けてしまうほど。<br>
+    文句なしの神ゲーだった。</p>
   </main>
 
   <footer>
-    &copy; 2025 ゲーム紹介サイト
+         <div class="btn-wrapper">
+           <a href="https://www.nintendo.com/jp/zelda/totk/index.html?srsltid=AfmBOopXrwtL5WtqTSc8DK7Ko_Z9XlcfPLcdcCHBEsDT6f0WVnBbXeUK">公式サイトへ</a>
   </footer>
 </body>
 </html>

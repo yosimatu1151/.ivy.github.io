@@ -2,11 +2,33 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ゲーム紹介サイト - 遊び方</title>
+  <title>ゲーム紹介サイト - ホーム</title>
   <style>
-    body { font-family: sans-serif; margin: 0; }
-    header, footer { background: #333; color: white; padding: 1em; }
-    nav a { color: white; margin-right: 1em; text-decoration: none; }
+    body { font-family: sans-serif; margin: 0;
+       background-image: url('f6b52e16-b5e6-4250-ac80-66391e00253e.png');
+  background-repeat: no-repeat;
+  background-size: 170% auto;
+  background-position: top center;
+  background-attachment: fixed;
+
+  /* ↓ 追加アニメーション */
+  animation: moveBackground 15s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+
+}
+    header, footer { color: rgb(0, 0, 0); padding: 1em; }
+    nav a { color: rgb(0, 0, 0); margin-right: 1em; text-decoration: none; }
     main { padding: 2em; }
   </style>
 </head>
@@ -15,22 +37,26 @@
     <h1>ゲーム紹介サイト</h1>
     <nav>
       <a href="index.html">ホーム</a>
-      <a href="about.html">遊び方</a>
-      <a href="contact.html">お問い合わせ</a>
+   
+
     </nav>
   </header>
 
   <main>
-    <h2>遊び方</h2>
-    <ul>
-      <li>WASDキーでキャラクター移動</li>
-      <li>スペースキーで攻撃</li>
-      <li>モンスターを倒して経験値を稼ごう</li>
-    </ul>
+    <h2>ゲームタイトル:ペルソナ４</h2>
+    <img src="ss_cbc2f665f1a9901d33d352424d6b333f4e4a6a87.1920x1080.jpg" alt="ゲーム画像" width="600">
+    <p>コメント
+      2008年に発売されたプレステ２用のゲームソフト。<br>
+    田舎で起こる怪奇連続殺人事件の謎と、その裏に潜む異界の存在に仲間達と共に挑んでいくストーリー。<br>
+    日常生活と異世界探索、友情と謎解きが混ざった内容で、どれもボリュームが凄いし、キャラも魅力的で、かなり没頭できて飽きなかった。<br>
+    switchやpcにリメイク版とかも出てたりするよ。<br>
+    
+  </p>
   </main>
 
   <footer>
-    &copy; 2025 ゲーム紹介サイト
+         <div class="btn-wrapper">
+           <a href="https://persona4.jp/">公式サイトへ</a>
   </footer>
 </body>
 </html>
